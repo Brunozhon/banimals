@@ -15,7 +15,7 @@
       function processJSON(json, search_q) {
         var html = '<table style="border: 2px solid black; border-collapse: collapse;"><tr><th style="border: 2px solid black; border-collapse: collapse;">Name</th><th style="border: 2px solid black; border-collapse: collapse;">Type</th><th style="border: 2px solid black; border-collapse: collapse;">Region</th></tr>'
         for (let banimal of json) {
-          if (banimal.name.toUpperCase().indexOf(search_q.toUpperCase()) == -1) { continue }
+          if (banimal.name.toUpperCase().indexOf(search_q.toUpperCase()) === -1) { continue }
           html += '<tr><td style="border: 2px solid black; border-collapse: collapse;">' + banimal.name + '</td><td style="border: 2px solid black; border-collapse: collapse;">' + banimal.type + '</td><td style="border: 2px solid black; border-collapse: collapse;">' + banimal.region + '</td></tr>'
         }
         html += "</table>"
@@ -30,7 +30,7 @@
           .then(response => response.json)
           .then(json => processJSON(json, input.value))
       }
-      input.onkeyup = inputHandler
+      input.addEventListener("keyup", inputHandler)
     </script>
   </body>
 </html>
