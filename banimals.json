@@ -42,5 +42,23 @@
       "Merrylee Christmas",
       "Mega Merrylee Christmas"
     ]
+  },
+  {
+    "name": "Cozee (Grassy form)",
+    "type": "Blanket",
+    "region": "Forest",
+    "evolvlutionList": [
+      "Cozee (Grassy Form)",
+      "Comfee (Grassy Form)"
+    ]
+  },
+  {
+    "name": "Comfee (Grassy Form)",
+    "type": "Blanket",
+    "region": "Forest",
+    "evolvlultionList": [
+      "Cozee (Grassy Form)",
+      "Comfee (Grassy Form)"
+    ]
   }
 ]
