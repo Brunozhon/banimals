@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Merrylee",
+    "type": "Gift",
+    "region": "Artic",
+    "evolvlutionList": [
+      "Merrylee",
+      "Giftlee",
+      "Merrylee Christmas",
+      "Mega Merrylee Christmas"
+    ]
+  },
+  {
+    "name": "Giftlee",
+    "type": "Two gifts",
+    "region": "Artic",
+    "evolvlutionList": [
+      "Merrylee",
+      "Giftlee",
+      "Merrylee Christmas",
+      "Mega Merrylee Christmas"
+    ]
+  }
+]
