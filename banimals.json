@@ -60,5 +60,23 @@
       "Cozee (Grassy Form)",
       "Comfee (Grassy Form)"
     ]
+  },
+  {
+    "name": "Cozee (Flower Form)",
+    "type": "Blanket",
+    "region": "Garden",
+    "evolvlultionList": [
+      "Cozee (Flower Form)",
+      "Comfee (Flower Form)"
+    ]
+  },
+  {
+    "name": "Comfee (Flower Form)",
+    "type": "Blanket",
+    "region": "Garden",
+    "evolvlultionList": [
+      "Cozee (Flower Form)",
+      "Comfee (Flower Form)"
+    ]
   }
 ]
