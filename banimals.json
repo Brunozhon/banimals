@@ -20,5 +20,27 @@
       "Merrylee Christmas",
       "Mega Merrylee Christmas"
     ]
+  },
+  {
+    "name": "Merrylee Christmas",
+    "type": "Christmas tree",
+    "region": "Artic",
+    "evolvlutionList": [
+      "Merrylee",
+      "Giftlee",
+      "Merrylee Christmas",
+      "Mega Merrylee Christmas"
+    ]
+  },
+  {
+    "name": "Mega Merrylee Christmas",
+    "type": "Christmas tree",
+    "region": "Artic",
+    "evolvlutionList": [
+      "Merrylee",
+      "Giftlee",
+      "Merrylee Christmas",
+      "Mega Merrylee Christmas"
+    ]
   }
 ]
