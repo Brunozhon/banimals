@@ -13,7 +13,7 @@
     <script>
       function processJSON(json) {
         var html = "<table><tr><th>Name</th><th>Type</th><th>Region</th></tr>"
-        for banimal of json {
+        for (let banimal of json) {
           html += "<tr><td>" + banimal.name + "</td><td>" + banimal.type + "</td><td>" + banimal.region + "</td></tr>"
         }
         html += "</table>"
