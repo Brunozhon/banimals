@@ -8,12 +8,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </head>
   <body>
+    <p>Search: <input></p>
     <div id="banimal-add">
     </div>
     <script>
-      function processJSON(json) {
+      function processJSON(json, search_q) {
         var html = '<table style="border: 2px solid black; border-collapse: collapse;"><tr><th style="border: 2px solid black; border-collapse: collapse;">Name</th><th style="border: 2px solid black; border-collapse: collapse;">Type</th><th style="border: 2px solid black; border-collapse: collapse;">Region</th></tr>'
         for (let banimal of json) {
+          if (banimal.name.toUpperCase().indexOf(search_q.toUpperCase()) == -1) { continue }
           html += '<tr><td style="border: 2px solid black; border-collapse: collapse;">' + banimal.name + '</td><td style="border: 2px solid black; border-collapse: collapse;">' + banimal.type + '</td><td style="border: 2px solid black; border-collapse: collapse;">' + banimal.region + '</td></tr>'
         }
         html += "</table>"
@@ -21,7 +23,14 @@
       }
       fetch("banimals.json")
         .then(response => response.json())
-        .then(json => processJSON(json))
+        .then(json => processJSON(json, ""))
+      var input = document.querySelector("input")
+      function inputHandler(event) {
+        fetch("banimals.json")
+          .then(response => response.json)
+          .then(json => processJSON(json, input.value))
+      }
+      input.onkeyup = inputHandler
     </script>
   </body>
 </html>
