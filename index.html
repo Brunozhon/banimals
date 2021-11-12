@@ -12,9 +12,9 @@
     </div>
     <script>
       function processJSON(json) {
-        var html = "<table><tr><th>Name</th><th>Type</th><th>Region</th></tr>"
+        var html = '<table style="border: 2px solid black; border-collapse: collapse;"><tr><th style="border: 2px solid black; border-collapse: collapse;">Name</th><th style="border: 2px solid black; border-collapse: collapse;">Type</th><th style="border: 2px solid black; border-collapse: collapse;">Region</th></tr>'
         for (let banimal of json) {
-          html += "<tr><td>" + banimal.name + "</td><td>" + banimal.type + "</td><td>" + banimal.region + "</td></tr>"
+          html += '<tr><td style="border: 2px solid black; border-collapse: collapse;">' + banimal.name + '</td><td style="border: 2px solid black; border-collapse: collapse;">' + banimal.type + '</td><td style="border: 2px solid black; border-collapse: collapse;">' + banimal.region + '</td></tr>'
         }
         html += "</table>"
         document.getElementById("banimal-add").innerHTML = html
