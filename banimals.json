@@ -78,5 +78,13 @@
       "Cozee (Flower Form)",
       "Comfee (Flower Form)"
     ]
+  },
+  {
+    "name": "Comfee (Frozen Form)",
+    "type": "Frozen Blanket",
+    "region": "Michigan to Artic",
+    "evolvlultionList": [
+      "Cozee (Frozen Form)"
+    ]
   }
 ]
